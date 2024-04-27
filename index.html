@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizza Order</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Order Here!</h2>
+  <div class="formContainer">
+    <form id="pizzaForm">
+      <label for="pizzaType"> Pizza Type: </label> <br />
+      <select id="pizzaType">
+        <option value="hawaiian">Hawaiian</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="pepperoni">Pepperoni</option>
+      </select>
+      <br />
+
+      <label for="quantity"> Quantity: </label> <br />
+      <input type="number" id="quantity" min="1" required /> <br />
+      <div class="btn">
+        <button id="submitBtn">Submit Order</button>
+      </div>
+    </form>
+  </div>
+  <div id="response"></div>
+  <script src="pizzabot.js"></script>
+</body>
+</html>
